@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Hisab.exe" version="1.0.0.0" publicKeyToken="291952b5dcf87e62" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Hisab" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Hisab.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SqlServerCe" version="4.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="1118296">
+      <assemblyIdentity name="EntityFramework" version="4.4.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>p3RTOcdrbvVmL3DQTyBOKmm3qw8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hisab.exe" size="27648">
+      <assemblyIdentity name="Hisab" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8GH5e3wr6Hzqw9/S4Ll4ik2umXA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Hisab.exe.config" size="1158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YO3Fe47rbvmYYlgqWFA703blByg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Arnab-PC\Arnab" issuerKeyHash="e36eabf3fabc4d115116e3e5cf67f1fe0007985a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>uohNfee7dRczI2HD4LZFZ1SSGqQ=</DigestValue></Reference></SignedInfo><SignatureValue>FHRQvBLWLVArPeHn7eB6iiXiiFVJDoxNEiPVz1XWx7gMReXeyGJnaOg1XmGzmqQPE+oT3A2JqbhepDm4+uleSVMNG8nitKdZJVlsMZejk4x1JJswewhu+kMFf0RfjkdwXww/lKN3+nCbHt/iBe1chGcoC+r0pAMrIdfjM8WLFq4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vn7hs/MWWwmQWDDrKpWDjV9Sghr3ykubg0fex9lFy53R6/hRc5h1F/xDEzEhF4dX41rmYTSjI4n97dscHc7uj0OSr6UG8LqyaMyoF+b5sfQ736p6zpAjo3FW0PQOraExwHN15W17Ia90JiyMGUAjTTnFr69n2/Yt7vZbxvNTkXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a41a92546745b6e0c36123331775bbe77d4d88ba" Description="" Url=""><as:assemblyIdentity name="Hisab.exe" version="1.0.0.0" publicKeyToken="291952b5dcf87e62" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Arnab-PC\Arnab</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SKFBZt+pnfINiodORWGm9NiFdqQ=</DigestValue></Reference></SignedInfo><SignatureValue>WNvqTFp8BxmeVJ6NimlIL3yar5DqoqD40NmXxdejTHKQwV1EOvYltgJEeb0LSPyRD1F+4q21hvx+xNFdTp2o0jc5Rq6qUAK9gPj2zbyTFvFiHX0oEBjlao6bL65gTen2foo+oFy9zOgDVjfFzzIgDp9zpMk5PjL9DWNDjYFX+5M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vn7hs/MWWwmQWDDrKpWDjV9Sghr3ykubg0fex9lFy53R6/hRc5h1F/xDEzEhF4dX41rmYTSjI4n97dscHc7uj0OSr6UG8LqyaMyoF+b5sfQ736p6zpAjo3FW0PQOraExwHN15W17Ia90JiyMGUAjTTnFr69n2/Yt7vZbxvNTkXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQf15AEI3RLpxOvU6WLDw0pjANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwAQQByAG4AYQBiAC0AUABDAFwAQQByAG4AYQBiMB4XDTE3MDYxOTE3Mzk1MFoXDTE4MDYxOTIzMzk1MFowJzElMCMGA1UEAx4cAEEAcgBuAGEAYgAtAFAAQwBcAEEAcgBuAGEAYjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvn7hs/MWWwmQWDDrKpWDjV9Sghr3ykubg0fex9lFy53R6/hRc5h1F/xDEzEhF4dX41rmYTSjI4n97dscHc7uj0OSr6UG8LqyaMyoF+b5sfQ736p6zpAjo3FW0PQOraExwHN15W17Ia90JiyMGUAjTTnFr69n2/Yt7vZbxvNTkXkCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBUhmrO3YY6aaSB6H+0SoyxzMnjvwoO4XDgq0jnoR6KUPI0k3LNOkxO+sVYm9KB1kl/Dzv4KkARDQWzUCS/gXG8ywv3ERjf6aPmy3K7JviYYlSF+5t3zY6tTprjvhzsWIfajhhmLBkRqozrv+cNA2GVIK/Ce8bN4P6uTXpwLYeeMg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
